@@ -38,7 +38,7 @@ The command execution should be executed inside the ``async execute()...`` funct
 
 For commands with an auto complete feature for your inputs take a look at ``./commands/autocomplete.js``
 
-```-javascript
+```javascript
     .addStringOption(option => 
         option.setName('options')
         .setDescription('example option')
@@ -72,7 +72,7 @@ Here for a more complicated example, we are looping through sports teams and cre
 
 We must start by creating a teams model in ``./models/teams.js``
 
-```-javascript
+```javascript
 const mongoose = require('mongoose')
 
 const teamsSchema = new mongoose.Schema({
@@ -89,7 +89,7 @@ You can disregard everything except for ``name: String`` for now, we will see th
 
 Now we create a new file in the commands folder and set do everything the same from our autocomplete example
 
-```-javascript
+```javascript
 const teamDB = require('../models/teams.js')
 
     //regular command setup
